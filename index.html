@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app__videos">
+        <!-- video starts -->
+        <div class="video">
+            <video autoplay src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" class="video__player"></video>
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>23</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        reply
+                    </span>
+                </div>
+            </div>
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>Rajath</h3>
+                    <p class="videoFooter__description">Best video ever</p>
+                </div>
+            </div>
+            <img src="https://static.thenounproject.com/png/934821-200.png" alt="" class="videoFooter_record">
+        </div>
+        <!-- video ends -->
+
+        <!-- video starts -->
+        <div class="video">
+            <video autoplay src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" class="video__player"></video>
+            <div class="videoSidebar">
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        favorite_border
+                    </span>
+                    <p>12</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        chat
+                    </span>
+                    <p>23</p>
+                </div>
+                <div class="videoSidebar__button">
+                    <span class="material-icons">
+                        reply
+                    </span>
+                </div>
+            </div>
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>Dina</h3>
+                    <p class="videoFooter__description">Super video ever</p>
+                </div>
+            </div>
+            <img src="https://static.thenounproject.com/png/934821-200.png" alt="" class="videoFooter_record">
+        </div>
+        <!-- video ends -->
+    </div>
+
+    <script>
+        const videos = document.querySelectorAll('video')
+
+        for (const video of videos) {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play()
+                }
+                else {
+                    video.pause()
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
